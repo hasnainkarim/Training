@@ -743,6 +743,15 @@ color: ivory;
  
 
 </head>
+
+
+
+
+
+
+
+
+
 <body>
     
     <nav class="navbar navbar-light bg-light justify-content-between" style="display: inline-flex;">
@@ -849,8 +858,8 @@ color: ivory;
 
       <ul id="ul1" class="step-pog-bar">
         <h1 id="result" class="doctitle1">#1</h1>
-        {{# each items }}
-  <p id="100" class="doctitle1"><b>{{ this.pname }}</b></p>
+        
+  <p id="100" class="doctitle1"><b>{{# each items }}{{ this.pname }}</b></p>
   
   <li class="active">
  Form Fill-up
