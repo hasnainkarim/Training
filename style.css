@@ -1,0 +1,727 @@
+
+body{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgb(0, 0, 19) 0%, rgb(68, 68, 133) 100%, rgba(0,212,255,1) 100%);
+  
+  /*background: rgb(8, 17, 29);*/
+}
+ .container{
+   width:100%;
+   text-align: center;
+   margin-bottom: 20%;
+ }
+ .step-pog-bar{
+  margin-top:5%;
+  counter-reset: step;
+
+ }
+ 
+ .container li{
+list-style: none;
+float: left;
+width: 5.8823%;
+position: relative;
+text-align:center;
+margin-bottom: 10px;
+font-size: 13px;
+
+ }
+
+  .container li::before{
+   content: counter(step);
+   align-content: left;
+   counter-increment: step;
+   width: 15px;
+   height: 15px;
+   line-height: 15px;
+   border: 15px solid rgb(88, 71, 100);
+   display: block;
+   text-align: left;
+   margin: 0 auto 10px auto;
+   border-radius: 40%;
+   background-color: rgb(255, 255, 255);
+   font-size: 13px;
+   
+
+
+ }
+
+
+
+ .container li::after{
+
+
+content: '';
+position: absolute;
+top: 15px;
+left: -50%;
+border: 2px solid #ddd;
+width: 100%;
+z-index: -1;
+
+
+ }
+
+
+
+
+ .container li:first-child::after{
+   content: none;
+ }
+ .container li.active{
+   color: rgb(255, 255, 255);
+
+ }
+ .container li.active::before{
+   border-color: rgb(173, 182, 53);
+   /*border-color: rgb(255, 1, 1); */
+
+ }
+
+ .container li.active + li::after{
+   border-color:  rgb(149, 197, 252);
+   /*border-color: rgb(231, 180, 71);*/
+
+ }
+
+
+  .container li.process{
+    color: rgb(248, 235, 158);
+ 
+  }
+  .container li.process::before{
+    border-color: rgb(235, 5, 5);
+    /*border-color: rgb(243, 237, 150);*/
+ 
+  }
+ 
+  .container li.process + li::after{
+    border-color: rgb(149, 197, 252);
+    /*border-color: brown;*/
+ 
+  }
+
+  .container li.left{
+    color: rgb(200, 241, 253);
+ 
+  }
+  .container li.left::before{
+    border-color: rgb(85, 111, 197);
+    /*border-color: rgb(35, 192, 87);*/
+ 
+  }
+ 
+  .container li.left + li::after{
+    border-color:rgb(149, 197, 252);
+    /*border-color:rgb(100, 78, 35);*/
+ 
+  }
+
+
+.navbar-brand{
+    color: rgb(225, 228, 214);
+}
+
+ 
+.container ul p{
+    color: rgb(235, 151, 151);
+    font-size: 18px;
+}
+
+
+.alert{
+    color: rgb(194, 191, 145);
+    margin-top: 15%;
+   text-align: left;
+   font-size: 15px;
+   
+
+
+   
+}
+
+.alert:hover{
+    color: rgb(240, 252, 250);
+    margin-top: 15%;
+   text-align: left;
+   font-size: 16px;
+   
+
+
+   
+}
+
+.con{
+
+  margin-top: 10%;
+}
+
+
+.container li:hover{
+    opacity: 1;
+
+color: rgb(250, 145, 145);
+font-style: normal;
+font-size: 14px;
+
+     }
+
+
+     .container ul p:hover{
+        color: rgb(218, 245, 121);
+        font-size: 22px;
+    }
+
+    .footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 8%;
+      background-color: rgb(56, 65, 90);
+      color: rgb(245, 248, 239);
+      text-align: center;
+      font-size: 15px;
+      margin-top: 10px;;
+    }
+
+
+    /* Bordered form */
+form {
+  border: 3px solid #f1f1f1;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: rgb(46, 202, 72);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button1 {
+  background-color: rgb(56, 177, 72);
+  color: white;
+ position: relative;
+ padding: 14px 20px;
+ padding: 14px 20px;
+ margin-top: 15px;
+}
+
+button1:hover {
+  opacity: 0.8;
+  background-color: rgb(217, 222, 233);
+  color: rgb(241, 238, 14);
+}
+
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+  background-color: yellow;
+  color: rgb(185, 40, 40);
+  transition-duration: .1.5s;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+  margin-bottom: 10%;
+  color: #ffffff;
+  margin-left: 40%;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+  text-align: center;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+
+/* Avatar image */
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+/* Add padding to containers */
+.container1 {
+  padding: 15px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+}
+
+.embed-responsive-item {
+  margin-left: 30%;
+  margin-bottom: 20%;
+  height: 200px;
+
+ 
+
+}
+
+.seeimgbtn{
+
+  width: 15%;
+  margin-bottom: 10%;
+  margin-top: 10%;
+  margin-left: 43%;
+  border-radius: 10%;
+  color: antiquewhite;
+  border-color: forestgreen;
+  font-size: 15px;
+}
+
+.container1 btn{
+  width: 50%;
+  margin-bottom: 10%;
+  margin-left: 25%;
+}
+
+
+.un{
+
+  color: #ffffff;
+  font-size: 25px;
+ 
+  margin-left: 11%;
+}
+
+.psd{
+  color: #f44336;
+  font-size: 25px;
+ 
+  margin-left: 11.2%;
+}
+
+.psdc{
+  color: #f44336;
+  font-size: 25px;
+  
+  margin-left: 3%;
+}
+
+.psda{
+  color: #f44336;
+  font-size: 25px;
+  
+  margin-left: 8.8%;
+}
+
+.psd:hover{
+color: cornsilk;
+}
+.psda:hover{
+  color: cornsilk;
+  }
+
+.psdc:hover{
+  color: cornsilk;
+}
+
+.un:hover{
+  color: cornsilk;
+  }
+
+
+
+
+.doctitle{
+
+  text-align: center;
+  color: rgb(234, 252, 72);
+  margin-bottom: 7%;
+  margin-top: 7%;
+}
+
+.doctitle1{
+
+  text-align: center;
+  color: rgb(215, 235, 42);
+  margin-bottom: 2%;
+
+  font-size: 25px;
+  
+
+}
+.doctitle1:hover{
+
+  font-size: 30px;
+  color: rgb(247, 196, 102);
+  transition-duration: 1.5;
+}
+
+
+.btn1{
+  width: 15%;
+  margin-left: 40%;
+  color: darkred;
+  border-radius: 5%;
+  background-color: rgb(69, 184, 23);
+}
+
+.btn1:hover{
+  width: 15%;
+  margin-left: 40%;
+  color: darkred;
+  border-radius: 4%;
+  background-color: rgb(187, 255, 29);
+  transition-delay: .035s;
+}
+
+.btn2{
+  width: 15%;
+  margin-left: 40%;
+  background-color: rgb(69, 184, 23);
+  color: rgb(78, 41, 10);
+  border-radius: 5%;
+}
+
+.btn2:hover{
+  width: 15%;
+  margin-left: 40%;
+  color: darkred;
+  border-radius: 4%;
+  background-color: rgb(187, 255, 29);
+  transition-delay: .035s;
+  
+}
+
+.btnn{
+  width: 15%;
+  margin-left: 40%;
+  border-radius: 5%;
+  color: #f1f1f1;
+  background-color: rgb(15, 155, 15);
+}
+
+.sp{
+margin-top: 10%;
+  margin-left: 45%;
+  font-size: 20px;
+  color: aquamarine;
+}
+
+.sp:hover{
+  margin-top: 10%;
+    margin-left: 45%;
+    font-size: 25px;
+    color: aquamarine;
+  }
+
+
+  .unn{
+
+    color: #ffffff;
+    font-size: 25px;
+   
+    margin-left: 18%;
+  }
+
+  .btn-outline-success1{
+
+background-color: rgb(199, 42, 31);
+
+  }
+
+
+  .image-preview{
+
+    width:300px;
+    min-height: 100px;
+    border: 2px solid rgb(252, 250, 249);
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: cornsilk;
+
+  }
+
+
+
+
+
+
+
+
+
+
+ /* {box-sizing: border-box;} */
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #000000;
+  z-index: 9;
+  margin-bottom: 100px;
+  margin-right: 30px;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color:  rgb(85, 175, 179);
+  opacity: 90%;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #000000;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+
+
+
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-buttonX {
+  background-color: #555;
+  color: rgb(255, 255, 255);
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup form - hidden by default */
+.form-popupX {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #000000;
+  z-index: 9;
+  margin-bottom: 100px;
+  margin-right: 30px;
+}
+
+/* Add styles to the form container */
+.form-containerX {
+  max-width: 300px;
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  opacity: 90%;
+}
+
+/* Full-width input fields */
+.form-containerX input[type=text], .form-containerX input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #000000;
+}
+
+/* When the inputs get focus, do something */
+.form-containerX input[type=text]:focus, .form-containerX input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-containerX .btnX {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-containerX .cancelX {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-containerX .btnX:hover, .open-buttonX:hover {
+  opacity: 1;
+}
+
+
+.loginform-popup {
+  display: initial;
+  position: fixed;
+  bottom: 0;
+  right: 440px;
+  border: 3px solid #000000;
+  z-index: 9;
+  margin-bottom: 100px;
+  margin-right: 30px;
+  align-content: center;
+ 
+  
+}
+
+
+#addbtn{
+
+  display: none;
+}
+
+#removebtn{
+  display: none;
+}
+
+#uparrow{
+  display: none;
+}
+
+#inp{
+  display: none;
+}
+
+#searchbtn{
+  display: none;
+}
+
+
+/* The side navigation menu */
+#smcolorid{
+color: ivory;
+}
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: rgb(32, 4, 43); /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: yellow;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: rgb(255, 255, 255);
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.footer{
+
+  background-color: rgb(32, 13, 66);
+  
+
+ 
+
+}

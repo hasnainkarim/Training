@@ -1,1 +1,79 @@
-middle
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">  
+  <link rel="stylesheet" href="style.css">
+ 
+
+  <title>Step Progress Bar</title>
+ 
+
+</head>
+<body background="C:\xampp\locale\en\LC_MESSAGES\htdocs\website\images\Evening Night.jpg">
+    
+    <nav class="navbar navbar-light bg-light justify-content-between" style="display: inline-flex;">
+      <div id="main" style="color: rgb(182, 236, 128); font-size: 25px;margin-top: 0px;position: fixed;"><span onclick="openNav()">| | | |</span>
+       
+      </div>
+        <a style="margin-top: 15px;margin-left: 70px;" class="navbar-brand"><b>T R A I N I N G ____ M A N A G E M E N T</b></a>
+        <form1 class="form-inline">
+          <input style="margin-left: 50px; margin-top: -5px;width: 200px;" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button1 style="margin-left: 10px; margin-top: -5px;" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button1>
+         
+          <div style="display: inline-flex; margin-left: 10px;"><button class="btn btn-outline-success my-2 my-sm-0"  style="margin-left: 280px; margin-top: 25px;" type="submit" onclick="openform()"> Add</button>
+          <button class="btn btn-outline-success my-2 my-sm-0" style="margin-left: 20px; margin-top: 25px; background-color: crimson;" type="submit" onclick="openformX()"> Remove</button> </div>
+        </form>
+      </nav>
+
+
+
+
+      <div class="form-popup" id="myForm">
+        <form action="/insert" class="form-container" method="dialog">
+          <h1>Add</h1>
+      
+          <label for="email"><b>Email</b></label>
+          <input id="npname" type="text" placeholder="Enter Email" name="pname">
+      
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" >
+      
+          <button onclick="adddiv()" type="submit" class="btn">add</button>
+          <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+      </div>
+
+
+
+
+      <div class="form-popupX" id="myFormX">
+        <form class="form-containerX" method="dialog">
+          <h1>remove</h1>
+      
+          <label><b>Email</b></label>
+          <input id="npnameX" type="text" placeholder="Enter EmailX" name="emailX">
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" >
+      
+      
+          <button type="submit" onclick="removediv()" class="btnX">remove</button>
+          <button type="submit" class="btnX cancelX" onclick="closeFormX()">Close</button>
+        </form>
+      </div>
+
+
+
+
+
+
+
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <ul id="smcolorid">
+          <li style="display: none;" id="listadd">khamar</li>
+        </ul>
+    
+      </div>
